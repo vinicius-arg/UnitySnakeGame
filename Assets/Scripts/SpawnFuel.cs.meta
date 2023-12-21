@@ -3,7 +3,12 @@ guid: b58b4f945e596dd4b97a2e806a717efe
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - FuelPrefab: {fileID: 687315302324113644, guid: 77eab6676e4d5c64e8b231128f228907, type: 3}
+  - BorderTop: {instanceID: 0}
+  - BorderLeft: {instanceID: 0}
+  - BorderRight: {instanceID: 0}
+  - BorderBottom: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

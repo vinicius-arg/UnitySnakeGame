@@ -10,21 +10,17 @@ public class SpawnFuel : MonoBehaviour
     public Transform BorderLeft;
     public Transform BorderRight;
     public Transform BorderBottom;
-    // Start is called before the first frame update
-    void Spawn()
+
+    public void Spawn()
     {
-        int x = (int)Random.Range(BorderLeft.position.x, BorderRight.position.x);
-        int y = (int)Random.Range(BorderTop.position.y, BorderBottom.position.y);
+        int x = (int)Random.Range(BorderLeft.position.x + 10, BorderRight.position.x - 10);
+        int y = (int)Random.Range(BorderTop.position.y + 10, BorderBottom.position.y - 10);
 
         Instantiate(FuelPrefab, new Vector2(x, y), Quaternion.identity);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Spawn();
-    }
     void Start()
     {
-        Spawn();
+        InvokeRepeating("Spawn", 0.5f, 7f);
     }
 }

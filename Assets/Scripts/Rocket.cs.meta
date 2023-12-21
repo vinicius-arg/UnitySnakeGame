@@ -3,7 +3,12 @@ guid: debe30392b0567849b17c24842e99780
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Up: {fileID: 21300000, guid: 90295f4d6f184d84c83471b4fe981349, type: 3}
+  - Down: {fileID: 21300000, guid: ecf91803d1343874986eebca1b9a58e5, type: 3}
+  - Left: {fileID: 21300000, guid: 6abe1283c0a4b394783510bf36bcf73d, type: 3}
+  - Right: {fileID: 21300000, guid: 2ac6c7ae0bb6e6f42b96b55b8ed286e7, type: 3}
+  - tailPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
